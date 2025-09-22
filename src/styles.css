@@ -1,1 +1,164 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.content {
+  margin-bottom: 94px;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-main {
+  flex-grow: 1;
+}
+
+.content-main__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/*
+============== Page film ==============
+*/
+
+.content-film {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  flex-grow: 1;
+}
+
+.content-film__img {
+  width: calc((100% - 28px) / 2);
+  display: flex;
+  justify-content: center;
+}
+
+.content-film__img img {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+}
+
+.content-film__info {
+  width: calc((100% - 28px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-film__info__title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+.content-film__info__title h1,
+.content-film__info__title p {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #000;
+}
+
+.content-film__info__title p {
+  font-weight: 400;
+}
+
+.content-film__info__content > *:last-child {
+  margin-bottom: 0;
+}
+
+.content-film__info__decription {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #868686;
+}
+
+.content-film__info__rating {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #04a31e;
+}
+
+.content-film__info__text {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #000;
+}
+
+.content-film__decription__controls button {
+  padding: 16px 98px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #fff;
+  background-color: #ff4949;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .content-film {
+    flex-direction: column;
+  }
+
+  .content-film__img {
+    width: 100%;
+  }
+
+  .content-film__info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    flex-direction: column;
+  }
+}
