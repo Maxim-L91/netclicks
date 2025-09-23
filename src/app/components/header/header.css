@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.header-logo {
+  text-decoration: none;
+}
+
 .header-logo h1,
 .header-logo p {
   margin: 0;
@@ -17,6 +21,7 @@
   font-weight: 700;
   line-height: 29px;
   text-transform: uppercase;
+  color: #000;
 }
 
 .header-logo p {
@@ -27,12 +32,12 @@
 }
 
 .header-controls a {
-  color: #000;
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   text-decoration: none;
+  color: #000;
 }
 
 .header-controls a:hover {
